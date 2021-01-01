@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+
+    h1{
+      text-align: center;
+    }
+    h3{
+      text-align: center;
+    }
+</style>
+    <title>Message Section</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+
+
+</head>
+<body onload="loadComments()">
+<div class="container">
+    <h1>Welcome</h1>
+
+    <div id="comments" class="card mb-2">
+    </div>
+
+    <hr>
+
+    <div id="main-content">
+        <h3>Send your message!</h3>
+        <div id="make-comment">
+            <div class="form-group">
+                <label for="name">Your name:</label>
+                <input style="width:250px;" class="form-control" type="text" id="name" Required>
+            </div>
+            <div class="form-group">
+                <label for="message">Type message Below!</label>
+                <textarea class="form-control" id="message" Required></textarea>
+            </div>
+            <button type="button" class="btn btn-success" onclick="insertComment()">Send!</button>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
